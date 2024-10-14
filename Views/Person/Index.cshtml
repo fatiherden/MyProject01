@@ -1,0 +1,29 @@
+
+
+@{
+    ViewData["Title"] = "Person Page";
+}
+
+<div class="row text-left">
+    <div class="col-4">.col-4
+        <h1 class="display-4 text-center">Welcome 12</h1>
+        <h6 class="display-6 text-center"">@DateTime.Now</h6>
+        <p>List <a href="#">ASP.NET Core</a>.</p>
+
+            <ul class="list-group">
+            @foreach (var std in ViewData["personList"] as IList<PersonViewModel>)
+            {
+                <li class="list-group-item">
+                    @std.Name
+                </li>
+            }
+            </ul>
+    </div>
+
+    <div class="col-8">.col-4
+        <a href="/Person/Test1?veri1=ABC123&veri2=DEF456">Test1 </a>
+    </div>
+</div>
+
+
+

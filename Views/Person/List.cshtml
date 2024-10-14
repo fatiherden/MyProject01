@@ -1,0 +1,27 @@
+@model MyProject01.Models.PersonViewModel
+
+@{
+    ViewData["Title"] = "Person Page";
+}
+
+<div class="col-4">.col-4
+    <div class="text-left">
+        <h1 class="display-4 text-center"">Welcome 123</h1>
+        <h6 class="display-6 text-center"">@DateTime.Now</h6>
+        <p>Index <a href="#">Person List</a>. @Model.Name </p>
+
+        
+
+        @if (1 == 2)
+        {
+            <text>Değer bulunamadı.</text>
+        }
+        else
+        {
+            <ul class="list-group">
+              <li class="list-group-item"></li>
+            </ul>
+        
+        }
+    </div>
+</div>

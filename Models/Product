@@ -1,0 +1,19 @@
+namespace MyProject01.Models;
+
+public class Product
+{
+    [Key]
+    public int Id { get; set; }
+
+    [Required]
+    [DisplayColumn("Product Name")]
+    public string? ProductName { get; set; }
+
+    [Required]
+    public int Quantity { get; set; }
+
+    [Required]
+    public double Price { get; set; }
+
+    //public bool IsActive => !string.IsNullOrEmpty(Name);
+}
